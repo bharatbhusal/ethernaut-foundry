@@ -10,9 +10,6 @@ contract POC is Script {
     function run() external {
         vm.startBroadcast();
 
-        console.log("Current Owner is: ", level2.owner());
-        level2.Fal1out();
-        console.log("New Owner is: ", level2.owner());
         
         vm.stopBroadcast();
     }

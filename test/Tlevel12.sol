@@ -10,9 +10,8 @@ contract POC is Test {
 
     function test() external{
         vm.startBroadcast();
-        bytes32 myKey = vm.load(address(level12), bytes32(uint256(5)));
-        level12.unlock(bytes16(myKey));
-        assertEq(level12.locked(), false);
+        
+        
         vm.stopBroadcast();
     }
 }

@@ -9,10 +9,6 @@ contract POC is Test {
 
     function test() external {
         vm.startBroadcast();
-
-        console.log("Current Owner is: ", level4.owner());
-        level4.changeOwner(0xEAce4b71CA1A128e8B562561f46896D55B9B0246);
-        console.log("New Owner is: ", level4.owner());
         
         vm.stopBroadcast();
     }

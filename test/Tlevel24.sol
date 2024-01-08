@@ -2,10 +2,12 @@
 pragma solidity ^0.6.0;
 
 import "forge-std/Test.sol";
-import "../instances/Ilevel19.sol";
+import "../instances/Ilevel24.sol";
 
 contract POC is Test {
-     // Instance level19 = Instance(0x879A7D9b82862eba53B2B5294CADd808630060B4);
+
+    // PuzzleWallet wallet = PuzzleWallet(0x7E069Cb68CE876D435b422652f86462F4A276145);
+    // PuzzleProxy px = PuzzleProxy(0x7E069Cb68CE876D435b422652f86462F4A276145);
 
     function test() external{
         vm.startBroadcast();

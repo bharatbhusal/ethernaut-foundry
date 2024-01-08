@@ -2,15 +2,15 @@
 pragma solidity ^0.6.0;
 
 import "forge-std/Test.sol";
-import "../instances/Ilevel05.sol";
+import "../instances/Ilevel22.sol";
 
 contract POC is Test {
-    Token level5 = Token(0x64db54633180E5C63Ca63393324a8E0843dFa485);
 
-    function test() external {
+    Dex level22 = Dex(0x84c765cfdbA36b9e81Db0eb7C9356eed77296ed6);
+
+    function test() external{
         vm.startBroadcast();
         
-
         vm.stopBroadcast();
     }
 }

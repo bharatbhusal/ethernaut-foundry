@@ -10,9 +10,7 @@ contract POC is Script {
     function run() external {
         vm.startBroadcast();
         
-        console.log("Current balance is :", level5.balanceOf(msg.sender));
-        level5.transfer(0xD6aE8250b8348C94847280928c79fb3b63cA453e, 21);
-        console.log("New balance is :", level5.balanceOf(msg.sender));
+        
 
         vm.stopBroadcast();
     }
