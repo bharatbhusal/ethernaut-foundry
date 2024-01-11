@@ -11,4 +11,3 @@ contract Attacker is Test {
         require(level0.getCleared());
     }
 }
-
