@@ -6,7 +6,7 @@ import "../instances/Ilevel15.sol";
 
 contract POC is Test {
 
-    NaughtCoin level15 = NaughtCoin(0x3212D0421E355a28150991E610d0e01fa7b7Cf66);
+    // NaughtCoin level15 = NaughtCoin(0x3212D0421E355a28150991E610d0e01fa7b7Cf66);
 
     function test() external{
         vm.startBroadcast();

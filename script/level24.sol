@@ -7,8 +7,8 @@ import "../instances/Ilevel24.sol";
 
 contract POC is Script {
 
-    PuzzleWallet wallet = PuzzleWallet(0x7E069Cb68CE876D435b422652f86462F4A276145);
-    PuzzleProxy px = PuzzleProxy(0x7E069Cb68CE876D435b422652f86462F4A276145);
+    // PuzzleWallet wallet = PuzzleWallet(0x7E069Cb68CE876D435b422652f86462F4A276145);
+    // PuzzleProxy px = PuzzleProxy(0x7E069Cb68CE876D435b422652f86462F4A276145);
 
     function run() external{
         vm.startBroadcast();

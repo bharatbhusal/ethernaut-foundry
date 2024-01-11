@@ -8,7 +8,7 @@ import "@openzeppelin/contracts/math/SafeMath.sol";
 contract POC is Script {
     using SafeMath for uint256;
 
-    CoinFlip level3 = CoinFlip(0xa7604317Ebe188501578474781f18e8750d6FD3E);
+    // CoinFlip level3 = CoinFlip(0xa7604317Ebe188501578474781f18e8750d6FD3E);
 
     function run() external {
         vm.startBroadcast();

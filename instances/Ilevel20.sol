@@ -4,8 +4,8 @@ pragma solidity ^0.6.0;
 import '@openzeppelin/contracts/math/SafeMath.sol';
 
 contract Denial {
-
     using SafeMath for uint256;
+    
     address public partner; // withdrawal partner - pay the gas, split the withdraw
     address payable public constant owner = address(0xA9E);
     uint timeLastWithdrawn;
