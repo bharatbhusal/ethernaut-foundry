@@ -13,4 +13,4 @@ contract DenialHack {
     receive() external payable {
         while (true) {}
     }
-} 
+}

@@ -9,11 +9,10 @@ contract POC is Test {
     using SafeMath for uint256;
 
     // CoinFlip level3 = CoinFlip(0xa7604317Ebe188501578474781f18e8750d6FD3E);
-    
+
     function test() external {
         vm.startBroadcast();
 
-      
         vm.stopBroadcast();
     }
 }

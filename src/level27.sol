@@ -6,7 +6,7 @@ pragma solidity ^0.6.0;
 // contract BadSamaritan {
 
 //     error NotEnoughBalance();
-    
+
 //     GoodSamaritan goodsamaritan  = GoodSamaritan(0xcf2e93212faddDeB5ca99606104Be3Bae28e27A4); //ethernaut instance address
 //     function attax() external {
 //         goodsamaritan.requestDonation();

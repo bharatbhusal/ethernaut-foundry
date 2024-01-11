@@ -9,7 +9,7 @@ contract POC is Test {
 
     function test() external {
         vm.startBroadcast();
-        
+
         vm.stopBroadcast();
     }
 }

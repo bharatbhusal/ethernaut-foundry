@@ -7,9 +7,8 @@ import "../instances/Ilevel18.sol";
 contract POC is Test {
     // Instance level18 = Instance(0x879A7D9b82862eba53B2B5294CADd808630060B4);
 
-    function test() external{
+    function test() external {
         vm.startBroadcast();
-        
 
         vm.stopBroadcast();
     }

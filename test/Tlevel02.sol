@@ -1,5 +1,6 @@
 // SPDX-License-Identifier: MIT
 pragma solidity ^0.6.0;
+
 import "forge-std/Test.sol";
 import "../instances/Ilevel02.sol";
 
@@ -9,8 +10,6 @@ contract POC is Test {
     function test() external {
         vm.startBroadcast();
 
-        
-        
         vm.stopBroadcast();
     }
 }
