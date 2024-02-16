@@ -9,7 +9,7 @@ contract POC is Script {
 
     function run() external {
         vm.startBroadcast();
-
+        console2.log("hi");
         vm.stopBroadcast();
     }
 }

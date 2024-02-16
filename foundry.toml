@@ -3,5 +3,11 @@ src = 'src'
 out = 'out'
 libs = ['lib']
 
-eth_rpc_url = 'https://eth-rinkeby.alchemyapi.io/v2/<alchemy_api_key>'
-etherscan_api_key = '<etherscan_api_key>'
+
+[rpc_endpoints]
+goerli = "${GOERLI_RPC_URL}"
+INFURA_API_KEY = "{INFURA_API_KEY}"
+ETHERSCAN_API = "{ETHERSCAN_API}"
+
+eth_rpc_url = 'https://goerli.infura.io/v3/<INFURA_API_KEY>'
+etherscan_api_key = '<ETHERSCAN_API>'
